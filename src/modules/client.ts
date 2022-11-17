@@ -16,7 +16,7 @@ import { PaymentBackendMethodsModule } from './payment-backend-methods'
 import { PaymentCashOnDeliveryModule } from './payment-cash-on-delivery'
 import { NewsletterModule } from '@vue-storefront/core/modules/newsletter'
 import { InitialResourcesModule } from '@vue-storefront/core/modules/initial-resources'
-
+import { ProductLikes } from './product-likes'
 // import { DeviceModule } from './device/index';
 import { registerModule } from '@vue-storefront/core/lib/modules'
 
@@ -34,6 +34,7 @@ export function registerClientModules () {
   registerModule(CatalogNextModule)
   registerModule(CompareModule)
   registerModule(BreadcrumbsModule)
+  registerModule(ProductLikes)
   // registerModule(GoogleTagManagerModule)
   // registerModule(AmpRendererModule)
   registerModule(CmsModule)
