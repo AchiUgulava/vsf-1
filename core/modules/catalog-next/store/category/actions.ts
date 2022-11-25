@@ -10,7 +10,7 @@ import { localizedDispatcherRoute } from '@vue-storefront/core/lib/multistore'
 import FilterVariant from '../../types/FilterVariant'
 import { CategoryService } from '@vue-storefront/core/data-resolver'
 import { changeFilterQuery } from '../../helpers/filterHelpers'
-import { products, entities } from 'config'
+import config, { products, entities } from 'config'
 import { DataResolver } from 'core/data-resolver/types/DataResolver';
 import { Category } from '../../types/Category';
 import { _prepareCategoryPathIds } from '../../helpers/categoryHelpers';
@@ -18,7 +18,7 @@ import { prefetchStockItems } from '../../helpers/cacheProductsHelper';
 import chunk from 'lodash-es/chunk'
 import omit from 'lodash-es/omit'
 import cloneDeep from 'lodash-es/cloneDeep'
-import config from 'config'
+
 import { parseCategoryPath } from '@vue-storefront/core/modules/breadcrumbs/helpers'
 import createCategoryListQuery from '@vue-storefront/core/modules/catalog/helpers/createCategoryListQuery'
 import { transformCategoryUrl } from '@vue-storefront/core/modules/url/helpers/transformUrl';
