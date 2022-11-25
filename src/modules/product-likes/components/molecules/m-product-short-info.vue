@@ -29,7 +29,7 @@
 <script>
 import { SfHeading, SfIcon, SfPrice, SfButton } from '@storefront-ui/vue';
 import AProductRating from 'theme/components/atoms/a-product-rating';
-import AProductPrice from 'theme/components/atoms/a-product-price';
+import AProductPrice from 'src/modules/flooring-attribute/components/atoms/a-product-price.vue';
 import { createSmoothscroll } from 'theme/helpers'
 import { mapGetters } from 'vuex';
 export default {
