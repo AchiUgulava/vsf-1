@@ -1,5 +1,5 @@
 import { transformProductUrl, transformCategoryUrl, transformCmsPageUrl } from '@vue-storefront/core/modules/url/helpers/transformUrl';
-import { isServer } from '@vue-storefront/core/helpers';
+import { isServer, processURLAddress } from '@vue-storefront/core/helpers';
 import { UrlState } from '../types/UrlState'
 import { ActionTree } from 'vuex';
 // you can use this storage if you want to enable offline capabilities
@@ -12,7 +12,7 @@ import { removeStoreCodeFromRoute, currentStoreView, localizedDispatcherRouteNam
 import storeCodeFromRoute from '@vue-storefront/core/lib/storeCodeFromRoute'
 import fetch from 'isomorphic-fetch'
 import { Logger } from '@vue-storefront/core/lib/logger'
-import { processURLAddress } from '@vue-storefront/core/helpers';
+
 import * as categoryMutationTypes from '@vue-storefront/core/modules/catalog-next/store/category/mutation-types'
 import * as cmsPageMutationTypes from '@vue-storefront/core/modules/cms/store/page/mutation-types'
 import isEqual from 'lodash-es/isEqual'
